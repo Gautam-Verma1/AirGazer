@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="0dp"
+        android:minHeight="@dimen/list_item_height"
+        tools:context=".Settings_Activity">
+
+        <LinearLayout
+            android:id="@+id/settings_user_details"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/user_image"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:paddingRight="15dp"
+                android:minWidth="0dp"
+                android:src="@drawable/account" />
+
+            <TextView
+                android:id="@+id/settings_username"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:fontFamily="@font/worksans_regular"
+                android:textSize="25sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/settings_user_details"
+            android:background="#C2BAB8" />
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/settings_user_details"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/worksans_regular"
+            android:gravity="center_vertical"
+            android:text="Account"
+            android:textColor="@android:color/black"
+            app:drawableLeftCompat="@drawable/ic_baseline_vpn_key_24" />
+
+        <TextView
+            android:id="@+id/notification"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/account"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/worksans_regular"
+            android:gravity="center_vertical"
+            android:text="Notification"
+            android:textColor="@android:color/black"
+            app:drawableLeftCompat="@drawable/ic_baseline_notifications_24" />
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/modes"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_below="@id/notification"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:orientation="horizontal">-->
+
+<!--        <Switch-->
+<!--            android:id="@+id/modes"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60sp"-->
+<!--            android:layout_below="@id/notification"-->
+<!--            android:drawableLeft="@drawable/ic_baseline_nights_stay_24"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:fontFamily="@font/worksans_regular"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:text="Dark Mode"-->
+<!--            tools:ignore="RtlHardcoded,UseSwitchCompatOrMaterialXml" />-->
+
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/worksans_regular"
+            android:layout_below="@id/notification"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="Logout"
+            android:textColor="@android:color/black"
+            app:drawableLeftCompat="@drawable/ic_baseline_power_settings_new_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/logout"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans_regular"
+                android:minHeight="-9dp"
+                android:text="AirGazer"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/worksans_regular"
+                android:minHeight="0dp"
+                android:text="monitoring air quality"
+                android:textSize="7sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300sp"
+    android:layout_height="500sp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20sp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_current_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/worksans_regular"
+            android:text="Enter current email:"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/edit_current_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:fontFamily="@font/worksans_regular"
+            android:singleLine="true"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/text_current_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/worksans_regular"
+            android:text="Enter password:"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/edit_current_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:labelFor="@id/edit_current_password"
+            android:singleLine="true"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/button_verify"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="@android:color/black"
+            android:fontFamily="@font/worksans_regular"
+            android:minHeight="0sp"
+            android:layout_gravity="center_horizontal"
+            android:text="VERIFY" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#C2BAB8" />
+
+        <TextView
+            android:id="@+id/text_new_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/worksans_regular"
+            android:text="Enter new email:"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/new_email_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:fontFamily="@font/worksans_regular"
+            android:singleLine="true"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/change_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="@android:color/black"
+            android:backgroundTint="#4C35DF"
+            android:fontFamily="@font/worksans_regular"
+            android:minHeight="0sp"
+            android:layout_gravity="center_horizontal"
+            android:text="CHANGE" />
+    </LinearLayout>
+</RelativeLayout>

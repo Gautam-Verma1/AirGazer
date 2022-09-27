@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homesFragment">
+
+    <fragment
+        android:id="@+id/homesFragment"
+        android:name="com.example.safebreathe.HomesFragment"
+        android:label="fragment_homes"
+        tools:layout="@layout/fragment_homes" />
+    <fragment
+        android:id="@+id/globeFragment"
+        android:name="com.example.safebreathe.GlobeFragment"
+        android:label="fragment_globe"
+        tools:layout="@layout/fragment_globe" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.safebreathe.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+
+
+</navigation>

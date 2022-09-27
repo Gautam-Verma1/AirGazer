@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Home"
+        android:id="@+id/homesFragment"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+    <item android:title="Ask Me"
+        android:id="@+id/globeFragment"
+        android:icon="@drawable/brain" />
+
+    <item android:title="Settings"
+        android:id="@+id/settingFragment"
+        android:icon="@drawable/ic_baseline_settings_24"/>
+</menu>

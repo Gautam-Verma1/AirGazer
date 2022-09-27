@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "353118736258",
+    "project_id": "safebreathe-8b17d",
+    "storage_bucket": "safebreathe-8b17d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353118736258:android:db32793d4d13244dad899b",
+        "android_client_info": {
+          "package_name": "com.example.safebreathe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353118736258-jduqelvoop547crit7pl94kfkkjkm9u3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8K0NlFP9ZaaD1DmWqJsSHTJWx0VCedlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353118736258-jduqelvoop547crit7pl94kfkkjkm9u3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

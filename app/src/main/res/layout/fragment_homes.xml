@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<!--        <com.github.mikephil.charting.charts.LineChart-->
+<!--            android:id="@+id/graph"-->
+<!--            android:layout_width="400dp"-->
+<!--            android:layout_height="277dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.454"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/mq135"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="Home Fragment"-->
+<!--            android:layout_weight="1"/>-->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+        <com.github.lzyzsd.circleprogress.CircleProgress
+            android:id="@+id/circle_progress_aqi"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            app:circle_progress="25"
+            app:circle_suffix_text=" ppm"
+            app:circle_max="500"
+            app:circle_text_size="20dp"
+            app:circle_text_color="@color/black"
+            android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="25dp">
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/current_air_quality_textView"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Current Air Quality"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/worksans_regular"/>
+            </com.google.android.material.card.MaterialCardView>
+
+        <ImageView
+            android:id="@+id/current_air_quality_ImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/good"
+            android:adjustViewBounds="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+        <Spinner
+            android:id="@+id/drop_down_impact"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"/>
+        <TextView
+            android:id="@+id/text_view_impact"
+            android:layout_height="50sp"
+            android:layout_width="200sp"
+            android:scrollbars="vertical"
+            android:text="Respiratory illness to the people on prolonged exposure"
+            android:fontFamily="@font/worksans_regular"
+            android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/graph"
+            android:layout_width="400sp"
+            android:layout_height="200sp"
+            android:layout_marginBottom="60dp"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+<!--    </ScrollView>-->
+
+</FrameLayout>

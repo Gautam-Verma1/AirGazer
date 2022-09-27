@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ambee_api_key" templateMergeStrategy="preserve" translatable="false">2f909d18c6aab19b111796a4ece46efcfeb17c8350e402c01ef0497e4b54fd19</string>
+    <string name="iqair_key" templateMergeStrategy="preserve" translatable="false">82dfb838-d62e-41d7-b7e9-d6324550b870</string>
+
+</resources>

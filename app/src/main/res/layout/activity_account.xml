@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20sp"
+    android:layout_marginRight="20sp"
+    android:layout_marginTop="0dp"
+    android:orientation="vertical"
+    tools:context=".AccountActivity">
+
+    <TextView
+        android:id="@+id/update_email"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Update Email"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:fontFamily="@font/worksans_regular" />
+
+    <TextView
+        android:id="@+id/change_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Change Phone"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/worksans_regular" />
+
+    <TextView
+        android:id="@+id/change_password"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Change Password"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:fontFamily="@font/worksans_regular" />
+
+    <TextView
+        android:id="@+id/delete_account"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Delete Account"
+        android:gravity="center_vertical"
+        android:textColor="#FF0000"
+        android:fontFamily="@font/worksans_regular" />
+
+
+
+</LinearLayout>
